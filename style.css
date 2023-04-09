@@ -90,6 +90,7 @@ section {
   background-size: cover;
   background-position: center;
   height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +107,11 @@ section {
   color: #fff;
   text-align: center;
   margin-bottom: 20px;
+}
+div .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a .btn {
   text-decoration: none;
