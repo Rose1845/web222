@@ -26,12 +26,14 @@
       </div>
       <div id="review">
         <h2>Leave a Review</h2>
-        <form>
+        <form id="review-form">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
+          <p class="form-control error"></p>
 
           <label for="date">Date:</label>
           <input type="date" id="date" name="date" required />
+          <p class="form-control error"></p>
 
           <label for="rating">Rating:</label>
           <select id="rating" name="rating" required>
@@ -42,9 +44,11 @@
             <option value="4">4 stars</option>
             <option value="5">5 stars</option>
           </select>
+          <p class="form-control error"></p>
 
           <label for="review">Review:</label>
           <textarea id="review" name="review" required></textarea>
+          <p class="form-control error"></p>
 
           <button type="submit">Create</button>
         </form>
@@ -55,8 +59,16 @@
     </script>
     <script src="./data.js"></script>
     <script src="./review.js"></script>
+    <!-- <script>
+        const Date = new Date();
+        const date = Date.getFullYear() + '-' + (Date.getMonth() + 1) + '-' + Date.getDate();
+    </script> -->
+
+    <!-- date -->
+
     <footer>
-      <p>&copy; 2023 My Favorite Chess Website. All rights reserved.</p>
+      <p>Copyright © 2023 Chess Game</p>
+    
     </footer>
   </body>
 </html>
