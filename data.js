@@ -33,7 +33,7 @@ window.reviewData = [
         name: "Rose Odhiambo",
         date: "2023-01-01",
         rating: 3,
-        text: "This is a bad product!"
+        text: "This is a unique game!"
     },
 ];
     
