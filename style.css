@@ -1,0 +1,337 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  font-family: 'Roboto' sans-serif;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  margin: 0 10px;
+}
+
+header nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  color: #dddddd;
+}
+
+/* Main styles */
+
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+.home {
+  background-image: url("https://images.unsplash.com/photo-1571236207041-5fb70cec466e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.home p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+a .btn {
+  text-decoration: none;
+}
+.btn {
+  background-color: hsl(231, 64%, 54%);
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+/* reviews */
+#review-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 200px;
+  gap: 8px;
+}
+#review-container .review-card {
+  padding: 10px;
+  background-color: #f8f2f2;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 768px) {
+  #review-container {
+    grid-template-columns: 1fr;
+  }
+  #review-container .review-card {
+    padding: 10px;
+    background-color: #f8f2f2;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #review-container .review-card {
+    padding: 10px;
+    background-color: #f8f2f2;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #review-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.review-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(230, 74%, 41%);
+  padding: 10px;
+}
+#review {
+  /* background-color: #fff; */
+  padding: 100px 0;
+}
+
+#review h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#review p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+#review form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#review label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#review input,
+#review textarea,
+#review select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: inherit;
+}
+
+#review button[type="submit"] {
+  background-color: hsl(231, 64%, 54%);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#review button[type="submit"]:hover {
+  background-color: hsl(231, 64%, 54%);
+}
+
+.review-card {
+  padding: 10px;
+  background-color: #f8f2f2;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin-bottom: 5px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* contact  */
+#contact {
+  /* background-color: #fff; */
+  padding: 100px 0;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact,
+#review label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: inherit;
+}
+
+#contact button[type="submit"] {
+  background-color: hsl(231, 64%, 54%);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: hsl(231, 64%, 54%);
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}

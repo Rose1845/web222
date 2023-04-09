@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Chess.</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="review.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home">
+        <div>
+          <h2>Chess Game.</h2>
+          <p>
+            Chess is a strategic board game played between two players on a
+            checkered gameboard with 64 squares arranged in an 8×8 grid. Each
+            player starts with 16 pieces: one king, one queen, two rooks, two
+            knights, two bishops, and eight pawns. The goal of the game is to
+            checkmate the opponent's king, which means the king is in a position
+            to be captured (in "check") and cannot escape capture on the next
+            move (mate).
+          </p>
+          <div>
+            <button class="btn">
+              <a href="info.html">Learn More</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>News Letter Sign Up</h2>
+          <p>
+            Get in touch with us to schedule a chess day or ask any questions
+            about our game. We'd love to hear from you!
+          </p>
+          <form action="https://httpbin.org/post" method="POST">
+            <label for="name">Name</label>
+            <input
+              hidden
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Favorite Game Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

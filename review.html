@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess - Reviews</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- review page  -->
+    <header class="header">
+      <h1>Review</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="review.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="review-container">
+        <!-- reviews -->
+      </div>
+      <div id="review">
+        <h2>Leave a Review</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating" required>
+            <option value="" disabled selected>Select a rating</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+          </select>
+
+          <label for="review">Review:</label>
+          <textarea id="review" name="review" required></textarea>
+
+          <button type="submit">Create</button>
+        </form>
+      </div>
+    </main>
+    <script>
+      const reviews = window.reviewData;
+    </script>
+    <script src="./data.js"></script>
+    <script src="./review.js"></script>
+    <footer>
+      <p>&copy; 2023 My Favorite Chess Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
