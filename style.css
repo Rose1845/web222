@@ -171,6 +171,9 @@ p {
     justify-content: center;
     align-items: center;
   }
+  .review-text{
+    text-align: center;
+  }
   #review-container .review-card {
     padding: 10px;
     background-color: #f8f2f2;
